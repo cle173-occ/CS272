@@ -1,7 +1,9 @@
 /*
+ * CS 272 -In Class Java Review  01A
+ * Flips a coin x times, where x is user input, and prints heads or tails for each result
  * 
- * 
- * 
+ * @author Chris Le
+ * @version 2019-09-04
  */
 
 import java.util.Scanner;

@@ -1,5 +1,9 @@
 /*
+ * CS 272 -In Class Java Review  01A
+ * Creates a double array and fills it with random numbers between 25 and 75
  * 
+ * @author Chris Le
+ * @version 2019-09-04
  */
 
 import java.util.Random;
