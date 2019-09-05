@@ -1,5 +1,10 @@
 /*
+ * CS 272 -In Class Java Review  01B
+ * Tests the Circle, Rectangle, and Square classes and gets their areas
+ * Also creates an array filled with random 
  * 
+ * @author Chris Le
+ * @version 2019-09-04
  */
 
 import java.util.Random;
@@ -27,8 +32,12 @@ public class TestShapes {
 		
 		Random rand = new Random();
 		
+		
 		for(int i = 0; i < arr.length; i++) {
-			arr[i] = rand.nextInt(100);
+			double radius = rand.nextInt(100);
+			Circle cir1 = new Circle(radius);
+			arr[i] = cir1.getArea();
+			
 			sum += arr[i];
 			
 			if(arr[i] > highest) {
@@ -40,7 +49,7 @@ public class TestShapes {
 			}
 		}
 		
-		System.out.println("Array Sum: " + sum);
+		System.out.println("Array Area Sum: " + sum);
 		System.out.println("Highest number in Array: " + highest);
 		System.out.println("Lowest number in Array: " + lowest);
 	}
