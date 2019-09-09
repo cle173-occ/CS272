@@ -1,5 +1,5 @@
 
-public class Card
+public class Card 
 {
    private String name;
 
