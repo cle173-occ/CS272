@@ -52,6 +52,7 @@ public class TestShapes {
 		System.out.println("Array Area Sum: " + sum);
 		System.out.println("Highest number in Array: " + highest);
 		System.out.println("Lowest number in Array: " + lowest);
+
 	}
 
 }

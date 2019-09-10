@@ -1,5 +1,5 @@
 /**
- * CS 272 - Fall 2019
+z * CS 272 - Fall 2019
  * H01-RoachPopulation.java
  */
 package occ.cs272.h01;
@@ -16,22 +16,18 @@ public class RoachPopulation
     public static final String ASSIGNMENT = "H01-A";
 
         
-        private int population;
-        
-        public RoachPopulation() {
-            population = 0;
-        }
+        private int population;        
         
         public RoachPopulation(int population){
             this.population = population;
-        }
+        }        
         
         public void breed() {
             population *= 2;
         }
         
         public void spray() {
-            population *= .10;
+            population = population - (population / 10);
         }
         
         public int getRoaches() {
