@@ -1,18 +1,18 @@
 
 public class CallingCard extends Card
 {
-    private int cardNumber;
-    private int pin;
+    private String cardNumber;
+    private String pinNum;
     
-    public CallingCard(String n, int num, int pin)
+    public CallingCard(String n, String num, String pin)
     {  
        super(n);
        cardNumber = num;
-       pin = pin;
+       pinNum = pin;
     }
     
     public String format()
     {
-       return super.format() + " Card Number: " + cardNumber + " Pin: " + pin;
+       return super.format() + " Card Number: " + cardNumber + " Pin: " + pinNum;
     }
 }

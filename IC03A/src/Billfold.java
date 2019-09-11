@@ -4,6 +4,10 @@ public class Billfold extends Card
     public Card card1;
     public Card card2;
     
+    public Billfold() {
+        super();
+    }
+    
     public Billfold(Card card1, Card card2)
     {
         super();
@@ -25,4 +29,3 @@ public class Billfold extends Card
     }
     
 }
-+
