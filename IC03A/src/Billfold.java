@@ -9,8 +9,7 @@ public class Billfold extends Card
     }
     
     public Billfold(Card card1, Card card2)
-    {
-        super();
+    {        
         this.card1 = card1;
         this.card2 = card2;
     }
