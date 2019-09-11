@@ -12,7 +12,11 @@ public class Billfold extends Card
     }
     
     public void addCard(Card c) {
-        
+        if(card1 == null) {
+            card1 = c;
+        }else if(card2 == null) {
+            card2 = c;
+        }
     }
     
     public String format()
@@ -21,3 +25,4 @@ public class Billfold extends Card
     }
     
 }
++

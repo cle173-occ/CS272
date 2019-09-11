@@ -68,11 +68,11 @@ public class Sequence
     	
     	if(start < 0) {
         	for(int i = end; i >= start; i--) {
-            	arr[i] = array[end - i];
+            	arr[i] = array[end + (end - i)];
             }        	
     	}else {
 	    	for(int i = 0; i < arr.length; i++) {
-	    		arr[i] = array[i*step];
+	    		arr[i] = array[start + (i*step)];
 	    	}
     	}
     	return new Sequence(arr);
@@ -105,10 +105,10 @@ public class Sequence
 //        System.out.println("a.slice(-2)->" + a.slice(-2));
 //        System.out.println("a.slice(5)->" + a.slice(5));
 //        System.out.println("a.slice(-5)->" + a.slice(-5));
-       System.out.println("a.slice(0, 5, 2)->" + a.slice(0, 5, 2));
+//       System.out.println("a.slice(0, 5, 2)->" + a.slice(0, 5, 2));
 //        System.out.println("a.slice(1, 5, 2)->" + a.slice(1, 5, 2));
 //        System.out.println("a.slice(1, 5, 3)->" + a.slice(1, 5, 3));
 //        System.out.println("a.slice(2, 5, 3)->" + a.slice(2, 5, 3));
-//        System.out.println("a.slice(-1, -6, -1)->" + a.slice(-1, -6, -1));
+      System.out.println("a.slice(-1, -6, -1)->" + a.slice(-1, -6, -1));
     }
 }
