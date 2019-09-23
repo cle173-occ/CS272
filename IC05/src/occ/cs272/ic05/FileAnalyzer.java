@@ -38,8 +38,8 @@ public class FileAnalyzer
        // 2. Use the Scanner to read all of the words
        //   Keep track of which is largest
        // TODO: your work here
-       while(scan.hasNextLine()) {
-           String line = scan.nextLine();
+       while(scan.hasNext()) {
+           String line = scan.next();
            String[] arr = line.split("\\s+");
            for(int i = 0; i < arr.length; i++) {
                if(arr[i].length() > result.length()) {
