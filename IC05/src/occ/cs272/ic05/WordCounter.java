@@ -1,9 +1,11 @@
 package occ.cs272.ic05;
 
 import java.io.FileReader;
+import java.io.PrintWriter;
 import java.io.Reader;
 import java.io.StringWriter;
 import java.io.Writer;
+import java.util.Scanner;
 
 /**
  * Reading and processing text files.
@@ -28,12 +30,19 @@ public class WordCounter
     {
         // 1. Construct the Scanner and PrintWriter objects
         // TODO: your work here
+        Scanner scan = new Scanner(reader);
+        PrintWriter out = new PrintWriter(writer);
         
         // 2. Read the input file, writing the output for each line
         // TODO: your work here
         
+        while(scan.hasNext()) {
+            out.print("");
+        }
+        
         // 3. Close all files
         // TODO: your work here
+        scan.close();
     }
 
     /**
