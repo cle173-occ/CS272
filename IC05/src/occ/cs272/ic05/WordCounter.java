@@ -18,7 +18,7 @@ import java.util.Scanner;
 public class WordCounter
 {
     // TODO: You must fill these in correctly to get credit
-    public static final String STUDENT = "Put your login ID here";
+    public static final String STUDENT = "cle173";
     public static final String ASSIGNMENT = "IC05-B";
     
     /**
@@ -36,13 +36,20 @@ public class WordCounter
         // 2. Read the input file, writing the output for each line
         // TODO: your work here
         
-        while(scan.hasNext()) {
-            out.print("");
+ 
+        while(scan.hasNextLine()) {
+        	int count = 0;
+
+        	String line = scan.nextLine();
+        	String[] arr = line.split(" ");
+        	count = arr.length;
+        	out.println(count + "   " + line);
         }
         
         // 3. Close all files
         // TODO: your work here
         scan.close();
+        out.close();
     }
 
     /**
