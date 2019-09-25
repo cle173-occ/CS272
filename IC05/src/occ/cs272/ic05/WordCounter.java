@@ -41,9 +41,21 @@ public class WordCounter
         	int count = 0;
 
         	String line = scan.nextLine();
-        	String[] arr = line.split(" ");
-        	count = arr.length;
-        	out.println(count + "   " + line);
+        	
+        	//String[] arr = line.split(" ");
+        	//count = arr.length;
+        	
+        	///*
+        	Scanner lineIn = new Scanner(line);
+        	while(lineIn.hasNext()) {
+        	    String x  = lineIn.next();
+        	    count++;
+        	}
+        	lineIn.close();
+        	//*/
+        	
+        	
+        	out.printf("%-3d " + line + "\n", count);
         }
         
         // 3. Close all files
