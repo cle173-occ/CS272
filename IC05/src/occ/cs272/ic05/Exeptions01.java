@@ -16,16 +16,17 @@ public class Exeptions01
     {
         try (Scanner cin = new Scanner(System.in))
         {
-            System.out.println("int[] a = {5, 6, 7};");
-            System.out.print("What element do you want? ");
-            
-            int [] ar = {5, 6, 7};
-            
-            boolean okay = true;
-            do
+            boolean ok = false;
+            while (!ok)
             {
+                
+                System.out.println("int[] a = {5, 6, 7};");
+                System.out.print("What element do you want? ");
+                int[] ar =
+                { 5, 6, 7 };
                 try
                 {
+                    ok = true;
                     String indexStr = cin.next();
                     int index = Integer.parseInt(indexStr);
                     //int index = System.in.read();
@@ -36,7 +37,6 @@ public class Exeptions01
 
                 catch (Exception e)
                 {
-                   
                     if (e instanceof NumberFormatException)
                     {
                         System.err.println("Please use an integer input");
@@ -49,10 +49,9 @@ public class Exeptions01
                         System.err.println("Error!");
                         System.err.print(e.getMessage());
                         e.printStackTrace();
-                    
-                    okay = false;    
+                    ok = false;
                 } 
-            } while (okay);
+            }
         }
     }
 }
