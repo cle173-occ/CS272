@@ -69,6 +69,14 @@ public class WordCounter
      */
     public static void main(String[] args) throws Exception
     {
+        
+        /*
+         * //System.out.println("Command line args: ");
+        for(int i = 0; i < args.length; ++i) {
+            //System.out.println(args[i]);
+        }
+         */
+        
         WordCounter app = new WordCounter();
         // Set up the input and output file names (hard-coded for this problem)
         StringWriter out = new StringWriter();
