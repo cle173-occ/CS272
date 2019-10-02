@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-<<<<<<< HEAD
-	<name>H04</name>
+	<name>IC06</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,14 +13,5 @@
 	</buildSpec>
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
-=======
-	<name>CS272</name>
-	<comment></comment>
-	<projects>
-	</projects>
-	<buildSpec>
-	</buildSpec>
-	<natures>
->>>>>>> branch 'master' of https://github.com/cle173-occ/CS272.git
 	</natures>
 </projectDescription>
