@@ -9,8 +9,11 @@ public class StringUtil {
         // Hint: If the text starts with the string you want to match, then you are done.
         //       If not, consider the text that you obtain by removing the first character. 
         
-        if(text.contains(str)) return true;        
-        return find(text.substring(1), str);
+        if(text.length() < str.length()) return false;
+        if(text.substring(0, str.length()).equals(str)) return true;
+        
+        text = text.substring(1);
+        return find(text, str);
     }
 
 }
