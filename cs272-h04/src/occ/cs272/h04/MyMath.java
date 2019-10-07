@@ -11,7 +11,7 @@ public class MyMath {
     public static double squareRoot(double x)
     {
         // TODO: Complete squareRoot method by calling the recursive helper method squareRootGuess
-        return squareRootGuess(x, 1.001);
+        return squareRootGuess(x, x +.001);
     }
     
     public static double squareRootGuess(double x, double g) {
