@@ -11,7 +11,7 @@ public class MyMath {
     public static double squareRoot(double x)
     {
         // TODO: Complete squareRoot method by calling the recursive helper method squareRootGuess
-        return x;
+        return squareRootGuess(x, 1.001);
     }
     
     public static double squareRootGuess(double x, double g) {
@@ -21,6 +21,10 @@ public class MyMath {
         // better guess.
         // We can say that g^2 is approximately equal to x when g^2 is within epsilon of x. 
         
-        return x;
+        if(Math.abs(g*g - x) < epsilon) { return g; }
+        
+        g = (g + x/g) / 2;
+        
+        return squareRootGuess(x, g);
     }
 }
