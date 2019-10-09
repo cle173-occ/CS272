@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class BubbleSortDemo
 {
-
     public static void main(String[] args)
     {
         int[] a = ArrayUtil.randomIntArray(10000, 100);
