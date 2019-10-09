@@ -26,7 +26,7 @@ public class BubbleSortDemo
         //System.out.println(Arrays.toString(c));
         System.out.println("30000 Values: " + BubbleSorter.count);
         
-        int[] d = ArrayUtil.randomIntArray(40000, 100);
+        int[] d = ArrayUtil.randomIntArray(40000, 100); 
         //System.out.println(Arrays.toString(d));
 
         BubbleSorter.sort(d);
